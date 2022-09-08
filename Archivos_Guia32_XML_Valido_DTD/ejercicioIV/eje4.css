@@ -1,0 +1,56 @@
+recetas {
+  color: #fff;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 40%;
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight: bold;
+  min-width: 450px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  background-image: url("image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+receta{
+    display: block;
+    padding: 20px;
+    justify-content: center;
+}
+
+platillo{
+    display: block;
+    font-weight: bold;
+    color: #a98686;
+    font-size: 20px;
+}
+
+ingredientes{
+    display: block;
+    color: #f15048;
+    background-color: #fff!important;
+    padding: 10px;
+}
+ingrediente{
+    display: block;
+}
+
+tipo{
+    display: block;
+    margin-bottom: 20px;
+}
+
+pasos{
+    display: block;
+    padding: 10px;
+    background-color: #f15048;
+}
+paso{
+    display: block;
+}
+paso::before {
+    content: attr(orden ) ' - ' ;
+    color: rgb(255, 254, 254); font-weight: bold;
+}
