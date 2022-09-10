@@ -24,7 +24,7 @@
 <recetas xmlns:xlink="http://www.w3.org/1999/xlink">
 
     <receta>
-        <platillo>Sepia rellena de bacalao y langostinos</platillo>
+        <platillo>Sepia rellena de bacalao y langostinos </platillo>
         <tipo>Primer plato</tipo>
         <ingredientes>
             <ingrediente>
@@ -133,7 +133,7 @@
             <paso orden="p2">En una trituradora pon el resto de los ajos, el hígado del pollo y la pimienta.
 				Cuando el pollo esté dorado, echa el triturado en la cacerola.</paso>
             <paso orden="p3">Añade el coñac, el agua y la pastilla de Avecrem Caldo de Pollo Gallina Blanca deshecha 
-				con los dedos. Espera a que se reduzca el agua… ¡y listo!.</paso>
+				con los dedos. Espera a que se reduzca el agua... ¡y listo!.</paso>
         </pasos>
         <calorias>598 cal/ración</calorias>
         <tiempo>20-40 min</tiempo>
