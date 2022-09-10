@@ -1,0 +1,10 @@
+<!-- ficha.dtd -->
+<!ELEMENT fichero (ficha+)>
+<!ELEMENT tabla (#PCDATA)>
+<!ELEMENT ficha (nombre, apellido, direccion*, dui?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ATTLIST nombre sexo (masculino|femenino) #REQUIRED>
+<!ATTLIST nombre edad  CDATA  #IMPLIED>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT dui (#PCDATA)>

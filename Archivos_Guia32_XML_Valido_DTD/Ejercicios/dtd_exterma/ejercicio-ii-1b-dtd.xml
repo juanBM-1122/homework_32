@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="estilo.css" type="text/css"?>
+
+<?xml-model href="./dtd/fichero.dtd" type="application/xml-dtd"?>
+
+<!-- ejercicio II.2b -->
+
+<!-- ejercicio-ii-1b-dtd.xml -->
+
+<!--
+	Ejercicio II.1b: se pide que copie el archivo ejemplo1dtd.xml con el nombre ejercicio-ii-1b-dtd.xml, 
+	luego realice cambios necesarios para crear una nueva versión de la dtd, sin perder de vista que debe 
+	experimentar los modelos de contenido para elementos y atributos. Valide y verifique el nuevo documento.
+
+	Ejercicio II.2b: se pide que convierta el ejercicio II.1b a dtd externa, no modifique dtd ni el xml, 
+	excepto cambios necesarios para que sea dtd externa. Valide y verifique el nuevo documento.
+-->
+
+<!DOCTYPE fichero SYSTEM "./dtd/fichero.dtd">
+
+<fichero>
+	<tabla>
+		<ficha>
+			<nombre sexo="femenino" edad="17">Angelina</nombre>
+			<apellido>Fernandez</apellido>
+			<direccion>c/Ulises, 36</direccion>
+		  <dui>02398472-8</dui>
+	   </ficha>
+	</tabla>	
+</fichero>

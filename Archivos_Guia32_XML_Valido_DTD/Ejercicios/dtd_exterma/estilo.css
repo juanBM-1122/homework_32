@@ -1,0 +1,51 @@
+* {display:block;}
+
+
+fichero {
+    display: block;
+    background-position-y:-50%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    background-color: #353131;
+    
+}
+
+ficha{
+    display: block;
+    width: 25%;
+    justify-content: space-around;
+     justify-items:baseline;
+    background-color:  #24a4cc ;
+    margin: 1%;
+    padding: 1%;
+    border:  #b4ecf4  solid 5px;
+    color:  #000000;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 0px 10px 0px 10px;
+    font-size: 1em;
+ }
+
+nombre[sexo]::before {content: " (Genero " attr(sexo) " ) ";color:rgb(0, 17, 255);font-size:3mm;}
+nombre[sexo]::after {content: " sexo: " attr(sexo);color:rgb(192, 192, 192);}
+
+apellido{
+    display: block;
+    justify-self: center;
+}
+apellido::before{
+    content: "Apellido: ";
+}
+direccion{
+    display: block;
+    justify-self: center;
+}
+direccion::before{
+    content: "Dirección: ";
+}
+dui{
+    display: block;
+    justify-self: center;
+}
+dui::before{
+    content: "DUI: ";
+}
