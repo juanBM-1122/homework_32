@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../dtd_interna/css/estilo.css"?>
+<!-- ejemplodtd1.xml -->
+
+<!DOCTYPE fichero  SYSTEM "./dtd/ejercicio-ii-1c-dtd.dtd">
+<fichero>
+ <ficha>
+  <nombre sexo="femenino" edad="17">Angelina</nombre>
+  <apellido>Fernandez</apellido>
+  <direccion>c/Ulises, 36</direccion>
+  <a xmlns="http://www.w3.org/1999/xhtml" href="../../../index.html">IR A INICIO</a>
+ </ficha>
+</fichero>
