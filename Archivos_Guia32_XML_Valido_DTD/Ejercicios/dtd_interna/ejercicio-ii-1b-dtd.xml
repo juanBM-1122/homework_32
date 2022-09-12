@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="./css/ejercicio-ii-1b-dtd.css"?>
+<!-- ejemplodtd1.xml -->
+
+<!DOCTYPE fichero [
+		<!ELEMENT fichero (ficha+)>
+		<!ELEMENT ficha (nombre, apellido, direccion*, DUI?,hobbies?,a*)>
+		<!ELEMENT nombre (#PCDATA)>
+		<!ATTLIST nombre sexo (masculino|femenino) #REQUIRED>
+    <!ATTLIST nombre edad  CDATA  #IMPLIED>
+		<!ELEMENT apellido (#PCDATA)>
+		<!ELEMENT direccion (departamento,municipio,colonia,calle?)>
+		 <!ELEMENT departamento (#PCDATA)>
+		 <!ELEMENT municipio (#PCDATA)>
+		 <!ELEMENT colonia (#PCDATA)>
+		 <!ELEMENT calle (#PCDATA)>
+		<!ELEMENT DUI (#PCDATA)>
+		  <!ELEMENT hobbies (hobbie+)>
+		  <!ELEMENT hobbie (#PCDATA)>
+		  <!ATTLIST hobbie clasificacion (deporte|arte|relajacion|introspeccion|CDATA) #REQUIRED>
+		<!ATTLIST departamento id-departamento CDATA #REQUIRED>
+		<!ATTLIST municipio id-departamento CDATA #REQUIRED>
+		<!ATTLIST municipio id-municipio CDATA #REQUIRED>
+		<!ATTLIST colonia clase (privada|publica) #REQUIRED>
+		<!ATTLIST fichero xmlns ENTITY #IMPLIED>
+		<!ELEMENT a (#PCDATA)>
+		<!ATTLIST a 
+		href CDATA #IMPLIED
+		xmlns CDATA #IMPLIED
+		target (_blank|_self|marco) "_blank">
+		]>
+<fichero >
+ <ficha>
+  <nombre sexo="femenino" edad="17" >Angelina</nombre>
+  <apellido>Fernandez</apellido>
+  <direccion>
+  <departamento id-departamento="1">
+    Santa Ana
+  </departamento>  
+  <municipio id-departamento="1" id-municipio="2">
+   Metapán
+  </municipio>
+   <colonia clase="privada">
+   El manguito peludo
+   </colonia>
+  </direccion>
+    <hobbies>
+ <hobbie clasificacion="deporte">
+ Calistenia- Street workout
+ </hobbie>  
+  </hobbies>
+  <a xmlns="http://www.w3.org/1999/xhtml" href="../../../index.html">IR A INICIO</a>
+ </ficha>
+</fichero>
