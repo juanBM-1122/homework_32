@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../dtd_interna/css/ejercicio-ii-1a-dtd.css"?>
+<!DOCTYPE fichero SYSTEM "./dtd/ejercicio-ii-1a-dtd.xml.dtd">
+<fichero>
+ <ficha>
+  <nombre sexo="femenino" edad="17" >Angelina</nombre>
+  <apellido>Fernandez</apellido>
+  <direccion>
+  <departamento id-departamento="1">
+    Santa Ana
+  </departamento>  
+  <municipio id-departamento="1" id-municipio="2">
+   Metapán
+  </municipio>
+   <colonia clase="privada">
+   El manguito peludo
+   </colonia>
+  </direccion>
+  <a xmlns="http://www.w3.org/1999/xhtml" href="../../../index.html">IR A INICIO</a>
+ </ficha> 
+</fichero>
