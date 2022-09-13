@@ -1,0 +1,43 @@
+<!ELEMENT facultad (carrera)>
+<!ELEMENT carrera (asignatura+)>
+<!ELEMENT asignatura (grupoDeCatedra+)>
+<!ELEMENT grupoDeCatedra (docente,asignacionEvaluada+)>
+<!ELEMENT docente (#PCDATA)>
+<!ELEMENT asignacionEvaluada (equipoDeTrabajo,a)>
+<!ELEMENT equipoDeTrabajo (alumno+)>
+<!ELEMENT alumno (#PCDATA)>
+<!ELEMENT a (#PCDATA)>
+<!ATTLIST facultad
+universidad CDATA #FIXED "UNIVERSIDAD DE EL SALVADOR"
+nombreFacultad CDATA #REQUIRED
+codigoFacultad CDATA #REQUIRED>
+<!ATTLIST carrera
+nombreCarrera CDATA #REQUIRED
+codigoCarrera CDATA #REQUIRED>
+<!ATTLIST asignatura 
+nombreAsignatura CDATA #REQUIRED
+codigoAsignatura CDATA #REQUIRED>
+<!ATTLIST grupoDeCatedra 
+tipoDeGrupo CDATA #REQUIRED
+numeroDeGrupo CDATA #REQUIRED>
+<!ATTLIST docente 
+nombres CDATA #REQUIRED
+apellidos CDATA #REQUIRED
+idProfesor CDATA #REQUIRED>
+<!ATTLIST asignacionEvaluada 
+tipoActividad CDATA #REQUIRED
+ponderacion CDATA #REQUIRED>
+<!ATTLIST equipoDeTrabajo
+numeroDeGrupo CDATA #REQUIRED
+temaAsignadao CDATA #REQUIRED>
+<!ATTLIST alumno
+nombre CDATA #REQUIRED
+due CDATA #REQUIRED
+apellidos CDATA #REQUIRED
+coordinador (true|false) "false"
+genero (M|F) "M">
+<!ATTLIST a
+href CDATA #IMPLIED
+xmlns CDATA #IMPLIED
+target CDATA ("_blank"|"_self") "_blank"
+>

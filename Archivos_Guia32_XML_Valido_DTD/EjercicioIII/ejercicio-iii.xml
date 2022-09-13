@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="./grupos.css"?>
+<!DOCTYPE facultad SYSTEM "./ejercicio-iii.dtd">
+
+<facultad nombreFacultad="facultad de ingenieria y arquitectura" codigoFacultad="FIA">
+
+  <carrera nombreCarrera="Ingenieria en sistemas informaticos" codigoCarrera="I10515">
+   <asignatura nombreAsignatura="Técnicas de programacion para internet" codigoAsignatura="TPI115">
+    <grupoDeCatedra tipoDeGrupo="GT" numeroDeGrupo="01">
+    <docente nombres="docente 01" apellidos="docente ap01" idProfesor="01">
+    </docente>
+    <asignacionEvaluada tipoActividad="Desarrollo de sistema" ponderacion="0.2">
+     <equipoDeTrabajo numeroDeGrupo="01" temaAsignadao="Investigación SEO">
+     <alumno nombre="alumno01" apellidos="al01" due="AZ09ddd" genero="F" coordinador="true">
+     </alumno>
+      <alumno nombre="alumno02" apellidos="al02" due="AZ09ddd" genero="M">
+     </alumno>
+      <alumno nombre="alumno03" apellidos="al03" due="AZ09ddd" genero="F">
+     </alumno>
+      <alumno nombre="alumno04" apellidos="al04" due="AZ09ddd" genero="M">
+     </alumno>
+     </equipoDeTrabajo>
+      <a xmlns="http://www.w3.org/1999/xhtml" href="../../index.html">INICIO</a>
+    </asignacionEvaluada>
+    </grupoDeCatedra>   
+   </asignatura>
+  </carrera>
+</facultad>

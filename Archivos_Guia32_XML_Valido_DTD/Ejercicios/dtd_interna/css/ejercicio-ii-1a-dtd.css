@@ -1,0 +1,63 @@
+fichero{
+display :block;
+background-color:#ffd166;
+position:relative;
+height: 100vh;
+font-family: calibri ;
+}
+
+ficha{
+display : block;
+width: 50%;
+height:250px;
+padding: 1%;
+background-color: 	white;
+margin:10px auto;
+}
+
+nombre{
+display:block;
+margin-top: 5%;
+border-top-style: double;
+border-top-color:red;
+border-bottom: 1px solid blue;
+font-size:1.5em;
+}
+nombre[sexo]::after{
+content: "  Sexo: " attr(sexo) " Edad: "attr(edad);
+}
+
+apellido{
+display:block;
+border-bottom: 1px solid blue;
+}
+apellido::before{
+content:"Apellido: ";
+}
+
+departamento::before{
+content: "Departamento: ";
+}
+
+departamento{
+display:block;
+border-bottom: 1px solid blue;
+}
+
+municipio::before{
+content:"Municipio: ";
+}
+
+municipio{
+display:block;
+border-bottom: 1px solid blue;
+}
+
+colonia::before{
+content:"Colonia: ";
+}
+
+colonia{
+display:block;
+border-bottom: 1px solid blue;
+}

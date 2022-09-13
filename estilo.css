@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100vh;
+    background: url("./fondo.png");
+    background-color: #000000;
+    color: #f5eded;
+    box-sizing: border-box;
+    position: fixed;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.navar{
+
+    width: 97%;
+}
+
+.navar-list{
+    display: flex;
+    align-items:center;
+    justify-content:flex-end ;
+    list-style: none;
+    margin-top: 1%;
+    flex-wrap: wrap;
+}
+
+.navar-list__element{
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+}
+
+.navar-list__element a{
+    display: block;
+    padding: 20px;
+    font-size: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: #f5eded;
+}
+
+.navar-list__element a:hover{
+    box-shadow: 2px 2px 10px blue;
+    background-color: blue;
+    opacity: 0.8;
+    
+}
+#login{
+    margin-right: 20px;
+}
+
+div.contenedor-cabezera{
+    width: 70%;
+    margin: 10px auto;
+
+    padding: 5%;
+    text-align: center;
+    font-size: 2.5em;
+    box-shadow: 2px 2px 10px #d72323;
+}
+
+article{
+    width: 91.5%;
+    display: grid;
+    margin: 3% auto;
+    grid-template-columns: repeat(3,1fr);
+}
+
+section{
+    background-color: #000000;
+    opacity: 0.8;
+    color: #f5eded;
+    margin:10px;
+    text-align: center;
+    font-size: 1.5em;
+    box-shadow: 2px 2px 10px #23d750;
+}
+section a{
+text-decoration: none;
+color: #f5eded;
+display: block;
+height: 50px;
+}
+
+section a:hover{
+    background-color:#23d750;
+    color: #f5eded;
+}
+
+div.homework-box__activity{
+    display: flex;
+    flex-direction: column;
+}

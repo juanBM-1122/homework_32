@@ -1,0 +1,98 @@
+facultad{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:  #1074b4 ;
+    display: block;
+    color: #e2e1e1;
+}
+
+facultad::before{
+    content: attr(nombreFacultad) "-" attr(codigoFacultad) "-" attr(universidad);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+carrera{
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    background-color:  #e2e1e1;
+    border-radius: 10px;
+    padding: 0.5%;
+}
+
+asignatura{
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    background-color:  #628faa ;
+    color: #e2e1e1;
+    border-radius: 5px;
+    padding:10px;
+    opacity: 0.7;
+}
+
+asignatura[nombreAsignatura]::before{
+    content: attr(nombreAsignatura);
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+docente{
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+}
+
+asignacionEvaluada{
+    display:block;
+    width: 80%;
+}
+
+grupoDeCatedra{
+    display: block;
+}
+
+grupoDeCatedra::before{
+    content: "Tipo de grupo " attr(tipoDeGrupo) " Numero de grupo: " attr(numeroDeGrupo);
+    text-transform: uppercase;
+
+}
+
+docente{
+display: block;
+
+}
+
+docente::before{
+ content: "Docente a cargo: " attr(nombres);
+}
+
+asignacioEvaluada{
+    display: block;
+    margin-bottom: 5px;
+    border: 1px solid black;
+}
+
+asignacionEvaluada::before{
+    content: "Tipo de actividad: " attr(tipoActividad) " Ponderación: " attr(ponderacion);
+    text-transform: uppercase;
+}
+
+
+equipoDeTrabajo{
+    display: block;
+}
+equipoDeTrabajo::before{
+    content: "Numero de grupo: " attr(numeroDeGrupo) " Tema asignado: " attr(temaAsignadao);
+    text-transform: uppercase;
+}
+
+alumno{
+    display: block;
+    margin: 5px;
+}
+alumno::after{
+    content: "Nombre: " attr(nombre) " Apellido: " attr(apellidos) " DUE: " attr(due) " Coordinador: " attr(coordinador);
+}
