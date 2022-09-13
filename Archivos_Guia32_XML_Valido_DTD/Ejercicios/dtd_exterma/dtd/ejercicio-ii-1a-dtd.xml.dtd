@@ -1,0 +1,14 @@
+<!--ficha.dtd-->
+<!ELEMENT solicitud (fichero+)>
+	<!ELEMENT ficha (nombre, apellido, direccion*)>
+	<!ELEMENT nombre (#PCDATA)>
+		<!ATTLIST nombre sexo (masculino|femenino) #REQUIRED>
+		<!ATTLIST nombre edad  CDATA  #IMPLIED>
+	<!ELEMENT apellido (#PCDATA)>
+	<!ELEMENT direccion (departamento, municipio, colonia)>
+		<!ELEMENT departamento (#PCDATA)>
+			<!ATTLIST departamento id-departamento CDATA #IMPLIED>
+			<!ATTLIST municipio id-departamento, id-municipio CDATA #IMPLIED>
+			<!ATTLIST colonia clase (privada|noPrivada) #REQUIRED>
+		
+		
