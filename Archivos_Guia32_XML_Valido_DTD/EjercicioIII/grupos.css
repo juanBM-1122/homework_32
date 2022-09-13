@@ -4,13 +4,13 @@ facultad{
     box-sizing: border-box;
     background-color:  #1074b4 ;
     display: block;
-    color: #e2e1e1;
+    color: #e2e1e1; 
 }
 
 facultad::before{
     content: attr(nombreFacultad) "-" attr(codigoFacultad) "-" attr(universidad);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-transform: uppercase;
+    text-transform: uppercase; 
 }
 
 carrera{
@@ -26,11 +26,11 @@ asignatura{
     display: block;
     width: 90%;
     margin: 10px auto;
-    background-color:  #628faa ;
-    color: #e2e1e1;
+    background-color:  #7797ac ;
+    color: #000000;
     border-radius: 5px;
     padding:10px;
-    opacity: 0.7;
+
 }
 
 asignatura[nombreAsignatura]::before{
@@ -57,7 +57,7 @@ grupoDeCatedra{
 grupoDeCatedra::before{
     content: "Tipo de grupo " attr(tipoDeGrupo) " Numero de grupo: " attr(numeroDeGrupo);
     text-transform: uppercase;
-
+    color: #7b0380;
 }
 
 docente{
@@ -83,10 +83,11 @@ asignacionEvaluada::before{
 
 equipoDeTrabajo{
     display: block;
+ 
 }
 equipoDeTrabajo::before{
     content: "Numero de grupo: " attr(numeroDeGrupo) " Tema asignado: " attr(temaAsignadao);
-    text-transform: uppercase;
+    text-transform: uppercase;   color: #b30202;
 }
 
 alumno{
@@ -95,4 +96,17 @@ alumno{
 }
 alumno::after{
     content: "Nombre: " attr(nombre) " Apellido: " attr(apellidos) " DUE: " attr(due) " Coordinador: " attr(coordinador);
+}
+separacion{
+    display: block;
+    border:  #6b6b6b  solid 1px;
+    width: 120%;
+    margin: 2% ; 
+}
+
+a{
+    display: block;
+    justify-self: center;
+    width: 0%;
+    margin: 1% auto; 
 }
